@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "n a a as"
+        "n a a as"
+        "n a a as"
+        "n a a as";
+    color: white;
+    background-color: black;
+}
+
+nav{
+    grid-area: n;
+    background-color: #333;
+    padding: 20px;
+}
+
+
+article{
+    grid-area: a;
+    padding: 20px;
+}
+
+aside{
+    grid-area: as;
+    background-color: #333;
+    padding: 20px;
+}
+aside h2{
+    margin-bottom: 20px;
+}
