@@ -17,23 +17,91 @@ body{
     background-color: black;
 }
 
+.circle .foryou{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    margin-bottom: 5px;
+}
+
 nav{
     grid-area: n;
-    background-color: #333;
-    padding: 20px;
+    padding: 10px;
+}
+
+nav li{
+    list-style: none;
+    display: grid;
+    margin: 30px ;
+    margin-right: 20px;
+}
+
+nav ul{
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+nav a:hover{
+    color: rgb(179, 177, 177);
+    background-color: #575454;
+    border-radius: 5px;
+    padding:  5px;
 }
 
 
 article{
     grid-area: a;
+    display: grid;
+    justify-content: center;
     padding: 20px;
+    border-left: 1px solid rgb(179, 177, 177);
+    height: 100vh;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profilok{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profilnev{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.post-content img{
+    padding: 0;
+    border-radius: px;
+    border: 0.5px solid rgb(87, 84, 84);
+    max-width: 50%;
+}
+
+.kedveles{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
 }
 
 aside{
     grid-area: as;
-    background-color: #333;
     padding: 20px;
-}
-aside h2{
-    margin-bottom: 20px;
+    height: 100vh;
 }
