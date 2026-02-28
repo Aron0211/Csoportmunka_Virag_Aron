@@ -14,15 +14,19 @@ body{
         "n a a as"
         "n a a as";
     color: white;
-    background-color: black;
+    background-color: rgb(7, 7, 13);
 }
 
 .circle .foryou{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     margin-bottom: 5px;
+}
+
+.circle img{
+    width: 100%;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
 nav{
@@ -79,6 +83,12 @@ div{
     margin-bottom: 20px;
 }
 
+.profilok img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 .profilnev{
     display: flex;
     align-items: center;
@@ -86,7 +96,7 @@ div{
     padding: 10px;
 }
 
-.post-content img{
+.fokontent img{
     padding: 0;
     border-radius: px;
     border: 0.5px solid rgb(87, 84, 84);
