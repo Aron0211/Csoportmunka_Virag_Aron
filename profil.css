@@ -120,3 +120,12 @@ img{
     width: 30%;
     border-radius: 50%;
 }
+
+.profilname{
+    gap: 60px;
+}
+
+.elnevezesek{
+    gap: 30px;
+}
+
