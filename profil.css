@@ -115,3 +115,8 @@ aside{
     padding: 20px;
     height: 100vh;
 }
+
+img{
+    width: 30%;
+    border-radius: 50%;
+}
