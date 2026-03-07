@@ -69,8 +69,8 @@ article{
     display: grid;
     justify-content: center;
     padding: 20px;
-    border-left: 1px solid rgb(179, 177, 177);
-    height: 100vh;
+    border-left: 1px solid rgb(167, 163, 163);
+    height: 1000px;
 }
 
 div{
@@ -81,9 +81,10 @@ div{
 
 .profilok{
     display: grid;
+    grid-template-columns: 100px 100px 100px;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid rgb(179, 177, 177);
+    border-bottom: 1px solid rgb(167, 163, 163);
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -95,10 +96,16 @@ div{
 }
 
 .profilnev{
-    display: grid;
+    display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
+}
+
+.profilnev img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 .fokontent img{
@@ -115,8 +122,35 @@ div{
     padding: 10px;
 }
 
+
 aside{
     grid-area: as;
     padding: 20px;
     height: 100vh;
+}
+
+.javasolt{
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.javasolt img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.javasolt h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.javasolt p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
