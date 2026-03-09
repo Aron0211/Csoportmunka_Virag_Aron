@@ -5,6 +5,7 @@
 }
 
 body{
+
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -69,7 +70,9 @@ article{
     grid-area: a;
     display: grid;
     justify-content: center;
-    padding: 20px;
+    padding:20px;
+    overflow-y:auto;
+    overflow:hidden;
     border-left: 1px solid rgb(167, 163, 163);
     height: 1000px;
 }
