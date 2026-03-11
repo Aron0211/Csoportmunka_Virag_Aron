@@ -84,6 +84,14 @@ div{
 }
 
 .profilok{
+    height:200px;
+overflow: hidden;
+overflow-x: auto;
+scrollbar-width: thin;
+scrollbar-color: #1b1b1b #000000;
+}
+
+.profil_golyo{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
