@@ -8,8 +8,6 @@ main{
         "n a";
 }
 
-
-
 article{
     grid-area: a;
     display: grid;
