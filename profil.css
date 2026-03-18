@@ -1,11 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 main{
-    font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
@@ -13,8 +6,6 @@ main{
         "n a"
         "n a"
         "n a";
-    color: white;
-    background-color: rgb(7, 7, 13);
 }
 
 
