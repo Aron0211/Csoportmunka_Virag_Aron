@@ -35,37 +35,6 @@ main{
     text-decoration: none;
 }
 
-nav{
-    grid-area: n;
-    padding: 10px;
-    margin: 10px;
-}
-
-nav li{
-    list-style: none;
-    display: grid;
-    margin: 30px ;
-    margin-right: 20px;
-}
-
-nav ul{
-    margin: 10px;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-}
-
-nav a:hover{
-    color: rgb(179, 177, 177);
-    background-color: #575454;
-    border-radius: 5px;
-    padding:  5px;
-}
-
-
 article{
     grid-area: a;
     display: grid;
