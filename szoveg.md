@@ -18,3 +18,5 @@ Von Goethe: "Bizonyos könyveket nem azért írtak, hogy abból tanulni lehessen
 
 Von Goethe:"Nem gondolható, hogy az ész valaha nép­szerűvé váljék. Szenvedélyek és érzelmek lehetnek népszerűkké, de az ész mindig csak egyes jelesebbek birtokában leend."
 
+Marc Jacobs:"A ruhák nem érnek semmit, amíg valaki nem viseli őket"
+
