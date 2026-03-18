@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
+main{
 
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-        "n a a as"
-        "n a a as"
-        "n a a as"
-        "n a a as";
+        "n a as"
+        "n a as"
+        "n a as"
+        "n a as";
     color: white;
     background-color: rgb(7, 7, 13);
 }
