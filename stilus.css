@@ -36,8 +36,8 @@ article{
     display: grid;
     justify-content: center;
     padding:20px;
-    overflow-y:auto;
-    overflow:hidden;
+    overflow-y:auto; 
+    overflow:hidden; 
     border-left: 1px solid rgb(167, 163, 163);
     height: 100vh;
 }
