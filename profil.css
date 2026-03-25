@@ -17,29 +17,44 @@ article{
     height: 100vh;
 }
 
-div{
+
+/* div{
     display: flex;
     align-items: center;
     gap: 10px;
-}
+} */
 
-img{
-    width: 20%;
+.profilname img{
+    width: 100%;
+    max-width: 150px;
     border-radius: 50%;
 }
-
 .profilname{
-    gap: 60px;
+    display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      gap: 10px;
+  
+}
+.profilname .elrendezes{
+    gap: 30px;
+    display: grid;
+    grid-auto-flow: column;
+  
 }
 
 .elnevezesek{
+      display: grid;
+    grid-auto-flow: column;
     gap: 150px;
     margin: auto;
 }
+
 .bejegyzesek{
     display: grid;
     grid-template-columns:repeat(auto-fill, minmax(310px, 1fr));
     padding-top: 30px;
+    gap: 20px;
 }
 
 .bejegyzesek img{
@@ -48,3 +63,11 @@ img{
     /*height: 360px;*/
     aspect-ratio:0.8;
 }
+
+.bio{
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+
