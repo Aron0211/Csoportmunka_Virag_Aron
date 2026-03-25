@@ -1,9 +1,9 @@
 @media screen and (max-width: 950px) {
 
     main {
-        grid-template-columns: 1fr 2fr; 
+        grid-template-columns: 1fr 2fr 1fr; 
         grid-template-areas: 
-            "n n"
-            "a a"
+            "n n n"
+            "a a as"
     }
 }
