@@ -6,58 +6,81 @@
     <meta name="keywords" content="csoportmunka, weboldal, HTML">
     <meta name="author" content="Papp Áron és Kiss Virág">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <link rel="stylesheet" href="alap.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="reszponzivitas.css">
+    <link rel="stylesheet" href="kviz.css">
     <title>Felvilágosodás | Csoportmunka</title>
 </head>
 <body>
-    <form>
-        <h1>Felvilágosodás kvíz</h1>
-        <h3>Tedd próbára a tudásod!</h3>
+     
+    <main>
+        <nav>
+            <h1>Instagram</h1>
+            <ul>
+                <li><a href="index.html"><b>Kezdőlap</b></a></li>
+                <li><a href="#">Reels</a></li>
+                <li><a href="#">Üzenetek</a></li>
+                <li><a href="#">Keresés</a></li>
+                <li><a href="kviz.html">Kvízek</a></li>
+                <li><a href="#">Felfedezés</a></li>
+                <li><a href="#">Értesítések</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+        </nav>
 
-        <p>q1?</p>
-        <input type="radio" name="elso" value="a"> a<br>
-        <input type="radio" name="elso" value="b"> b<br>
-        <input type="radio" name="elso" value="c"> c<br>
+        <form class="quiz-container">
+            <h1>Felvilágosodás kvíz</h1>
+            <h3>Tedd próbára a tudásod!</h3>
+
+            <p><b>1. Mi volt a felvilágosodás központi eszméje?</b></p>
+            <input type="radio" name="elso" value="a"> Az ész és a tudomány szerepe</label><br>
+            <input type="radio" name="elso" value="b"> Az egyház hatalmának növelése</label><br>
+            <input type="radio" name="elso" value="c"> A király abszolút hatalma</label>
 
 
-        <p>q2?</p>
-        <input type="radio" name="masodik" value="a"> a<br>
-        <input type="radio" name="masodik" value="b"> b<br>
-        <input type="radio" name="masodik" value="c"> c<br>
+            <p><b>2. Ki írta a "Társadalmi szerződés" című művet?</b></p>
+            <input type="radio" name="masodik" value="a"> Jean-Jacques Rousseau</label><br>
+            <input type="radio" name="masodik" value="b"> Voltaire</label><br>
+            <input type="radio" name="masodik" value="c"> Montesquieu</label>
 
 
-        <p>q3?</p>
-        <input type="radio" name="harmadik" value="a"> a<br>
-        <input type="radio" name="harmadik" value="b"> b<br>
-        <input type="radio" name="harmadik" value="c"> c<br>
+            <p><b>3. Mit hirdetett John Locke?</b></p>
+            <input type="radio" name="harmadik" value="a"> Természetes jogok (élet, szabadság, tulajdon)</label><br>
+            <input type="radio" name="harmadik" value="b"> Abszolút monarchia</label><br>
+            <input type="radio" name="harmadik" value="c"> Egyházi uralom</label>
 
-        
-        <p>q4?</p>
-        <input type="radio" name="negyedik" value="a"> a<br>
-        <input type="radio" name="negyedik" value="b"> b<br>
-        <input type="radio" name="negyedik" value="c"> c<br>
+            
+            <p><b>4. Mi volt az enciklopédia célja?</b></p>
+            <input type="radio" name="negyedik" value="a"> Az összes tudás összegyűjtése</label><br>
+            <input type="radio" name="negyedik" value="b"> Vallási tanok terjesztése</label><br>
+            <input type="radio" name="negyedik" value="c"> Katonai stratégiák gyűjtése</label>
 
-        <button type="button" onclick="checkAnswers()">Ellenőrzés</button>
+            <button type="button" onclick="checkAnswers()">Ellenőrzés</button>
 
-        <p id="result"></p>
-    </form>
+            <p id="result"></p>
+        </form>
 
-    <script>
-    function checkAnswers() {
-        let score = 0;
+        <script>
+        function checkAnswers() {
+            let score = 0;
 
-        let elso = document.querySelector('input[name="elso"]:checked');
-        let masodik = document.querySelector('input[name="masodik"]:checked');
-        let harmadik = document.querySelector('input[name="harmadik"]:checked');
-        let negyedik = document.querySelector('input[name="negyedik"]:checked');
+            let elso = document.querySelector('input[name="elso"]:checked');
+            let masodik = document.querySelector('input[name="masodik"]:checked');
+            let harmadik = document.querySelector('input[name="harmadik"]:checked');
+            let negyedik = document.querySelector('input[name="negyedik"]:checked');
 
-        if (elso && elso.value === "a") score++;
-        if (masodik && masodik.value === "a") score++;
-        if (harmadik && harmadik.value === "a") score++;
-        if (negyedik && negyedik.value === "a") score++;
+            if (elso && elso.value === "a") score++;
+            if (masodik && masodik.value === "a") score++;
+            if (harmadik && harmadik.value === "a") score++;
+            if (negyedik && negyedik.value === "a") score++;
 
-        document.getElementById("result").innerText = 
-            "Pontszám: " + score + "/4";
-    }
-    </script>
+            document.getElementById("result").innerText = 
+                "Pontszám: " + score + "/4";
+        }
+        </script>
+    </main>
+    
 </body>
 </html>
