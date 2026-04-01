@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ez a weboldal egy csoportmunka keretében készült.">
+    <meta name="keywords" content="csoportmunka, weboldal, HTML">
+    <meta name="author" content="Papp Áron és Kiss Virág">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felvilágosodás | Csoportmunka</title>
+</head>
+<body>
+    <form>
+        <h1>Felvilágosodás kvíz</h1>
+        <h3>Tedd próbára a tudásod!</h3>
+
+        <p>q1?</p>
+        <input type="radio" name="elso" value="a"> a<br>
+        <input type="radio" name="elso" value="b"> b<br>
+        <input type="radio" name="elso" value="c"> c<br>
+
+
+        <p>q2?</p>
+        <input type="radio" name="masodik" value="a"> a<br>
+        <input type="radio" name="masodik" value="b"> b<br>
+        <input type="radio" name="masodik" value="c"> c<br>
+
+
+        <p>q3?</p>
+        <input type="radio" name="harmadik" value="a"> a<br>
+        <input type="radio" name="harmadik" value="b"> b<br>
+        <input type="radio" name="harmadik" value="c"> c<br>
+
+        
+        <p>q4?</p>
+        <input type="radio" name="negyedik" value="a"> a<br>
+        <input type="radio" name="negyedik" value="b"> b<br>
+        <input type="radio" name="negyedik" value="c"> c<br>
+
+        <button type="button" onclick="checkAnswers()">Ellenőrzés</button>
+
+        <p id="result"></p>
+    </form>
+
+    <script>
+    function checkAnswers() {
+        let score = 0;
+
+        let elso = document.querySelector('input[name="elso"]:checked');
+        let masodik = document.querySelector('input[name="masodik"]:checked');
+        let harmadik = document.querySelector('input[name="harmadik"]:checked');
+        let negyedik = document.querySelector('input[name="negyedik"]:checked');
+
+        if (elso && elso.value === "a") score++;
+        if (masodik && masodik.value === "a") score++;
+        if (harmadik && harmadik.value === "a") score++;
+        if (negyedik && negyedik.value === "a") score++;
+
+        document.getElementById("result").innerText = 
+            "Pontszám: " + score + "/4";
+    }
+    </script>
+</body>
+</html>
