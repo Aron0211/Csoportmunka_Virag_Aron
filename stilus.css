@@ -1,18 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
+
+main{
+
     font-family: Arial, sans-serif;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-        "n a a as"
-        "n a a as"
-        "n a a as"
-        "n a a as";
+        "n a as"
+        "n a as"
+        "n a as"
+        "n a as";
     color: white;
     background-color: rgb(7, 7, 13);
 }
@@ -26,59 +23,45 @@ body{
 
 .circle img{
     width: 100%;
+    padding: 2px;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
-nav{
-    grid-area: n;
-    padding: 10px;
-}
-
-nav li{
-    list-style: none;
-    display: grid;
-    margin: 30px ;
-    margin-right: 20px;
-}
-
-nav ul{
-    margin: 10px;
-}
-
-nav a{
+.Instagram{
     text-decoration: none;
-    color: white;
-    padding: 5px;
 }
-
-nav a:hover{
-    color: rgb(179, 177, 177);
-    background-color: #575454;
-    border-radius: 5px;
-    padding:  5px;
-}
-
 
 article{
     grid-area: a;
     display: grid;
     justify-content: center;
-    padding: 20px;
-    border-left: 1px solid rgb(179, 177, 177);
+    padding:20px;
+    overflow-y:auto; 
+    overflow:hidden; 
+    border-left: 1px solid rgb(167, 163, 163);
     height: 100vh;
 }
 
 div{
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 10px;
 }
 
 .profilok{
-    display: flex;
+    height:200px;
+overflow: hidden;
+overflow-x: auto;
+scrollbar-width: thin;
+scrollbar-color: #1b1b1b #000000;
+}
+
+.profil_golyo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid rgb(179, 177, 177);
+    border-bottom: 1px solid rgb(167, 163, 163);
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -96,6 +79,12 @@ div{
     padding: 10px;
 }
 
+.profilnev img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
 .fokontent img{
     padding: 0;
     border-radius: px;
@@ -104,14 +93,54 @@ div{
 }
 
 .kedveles{
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+aside{
+    grid-area: as;
+    padding: 20px;
+    height: 100vh;
+}
+
+.javasolt{
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.javasolt img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.javasolt h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.javasolt p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.aside-profil{
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
 }
 
-aside{
-    grid-area: as;
-    padding: 20px;
-    height: 100vh;
+.aside-profil img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
