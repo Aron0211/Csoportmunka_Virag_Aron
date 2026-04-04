@@ -4,6 +4,7 @@
         grid-template-columns: 1fr 2fr 1fr; 
         grid-template-areas: 
             "n n n"
-            "a a as"
+            "a a a"
+            "as as as"
     }
 }
