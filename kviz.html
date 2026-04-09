@@ -90,7 +90,53 @@
                 <input type="radio" id="negyedik-a" name="negyedik" value="a" class="correct"><span> Az összes tudás összegyűjtése</span>
             </label>
 
+            <p><b>5. Melyik felvilágosult gondolkodó nevéhez köthető a hatalmi ágak megosztásának elve?</b></p>
 
+            <label for="otodik-a">
+                <input type="radio" id="otodik-a" name="otodik" value="a" class="correct"> <span>Montesquieu</span>
+            </label>
+            <label for="otodik-b">
+                <input type="radio" id="otodik-b" name="otodik" value="b" class="not(.correct)"> <span>Adam Smith</span>
+            </label>
+            <label for="otodik-c">
+                <input type="radio" id="otodik-c" name="otodik" value="c" class="not(.correct)"> <span>Immanuel Kant</span>
+            </label>
+
+            <p><b>6. Mit jelent a "sapere aude" kifejezés, amely a felvilágosodás jelmondatává vált?</b></p>
+
+            <label for="hatodik-b">
+                <input type="radio" id="hatodik-b" name="hatodik" value="b" class="not(.correct)"> <span>Élj a mának</span>
+            </label>
+            <label for="hatodik-a">
+                <input type="radio" id="hatodik-a" name="hatodik" value="a" class="correct"> <span>Merj tudni! (Használd az eszed!)</span>
+            </label>
+            <label for="hatodik-c">
+                <input type="radio" id="hatodik-c" name="hatodik" value="c" class="not(.correct)"> <span>A tudás hatalom</span>
+            </label>
+
+            <p><b>7. Ki volt az "Enciklopédia" egyik főszerkesztője D'Alembert mellett?</b></p>
+
+            <label for="hetedik-b">
+                <input type="radio" id="hetedik-b" name="hetedik" value="b" class="not(.correct)"> <span>Thomas Jefferson</span>
+            </label>
+            <label for="hetedik-c">
+                <input type="radio" id="hetedik-c" name="hetedik" value="c" class="not(.correct)"> <span>Baruch Spinoza</span>
+            </label>
+            <label for="hetedik-a">
+                <input type="radio" id="hetedik-a" name="hetedik" value="a" class="correct"> <span>Denis Diderot</span>
+            </label>
+
+            <p><b>8. Melyik uralkodót tartják a felvilágosult abszolutizmus egyik legjelentősebb magyarországi képviselőjének?</b></p>
+
+            <label for="nyolcadik-a">
+                <input type="radio" id="nyolcadik-a" name="nyolcadik" value="a" class="correct"> <span>II. József</span>
+            </label>
+            <label for="nyolcadik-b">
+                <input type="radio" id="nyolcadik-b" name="nyolcadik" value="b" class="not(.correct)"> <span>I. Ferenc</span>
+            </label>
+            <label for="nyolcadik-c">
+                <input type="radio" id="nyolcadik-c" name="nyolcadik" value="c" class="not(.correct)"> <span>III. Károly</span>
+            </label>
 
             <button type="button" onclick="checkAnswers()">Pontszám</button>
 
@@ -105,14 +151,22 @@
             let masodik = document.querySelector('input[name="masodik"]:checked');
             let harmadik = document.querySelector('input[name="harmadik"]:checked');
             let negyedik = document.querySelector('input[name="negyedik"]:checked');
+            let otodik = document.querySelector('input[name="otodik"]:checked');
+            let hatodik = document.querySelector('input[name="hatodik"]:checked');
+            let hetedik = document.querySelector('input[name="hetedik"]:checked');
+            let nyolcadik = document.querySelector('input[name="nyolcadik"]:checked');
 
             if (elso && elso.value === "a") score++;
             if (masodik && masodik.value === "a") score++;
             if (harmadik && harmadik.value === "a") score++;
             if (negyedik && negyedik.value === "a") score++;
+            if (otodik && otodik.value === "a") score++;
+            if (hatodik && hatodik.value === "a") score++;
+            if (hetedik && hetedik.value === "a") score++;
+            if (nyolcadik && nyolcadik.value === "a") score++;
 
             document.getElementById("result").innerText = 
-                "Pontszám: " + score + "/4";
+                "Pontszám: " + score + "/8";
         }
         </script>
     </main>
