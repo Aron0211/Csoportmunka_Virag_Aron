@@ -70,4 +70,37 @@ article{
 }
 
 
+@media (max-width: 950px) {
+   main {
+        grid-template-columns: 200px 1fr; 
+        grid-template-areas: 
+        "n"
+        "a";
+    }
+
+    .elnevezesek {
+        gap: 40px; 
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profilname {
+        gap: 20px;
+    }
+
+    .profilname img {
+        max-width: 120px;
+    }
+
+    .profilname .elrendezes {
+        gap: 15px;
+    }
+
+    .bejegyzesek {
+        gap: 10px;
+        padding-inline: 10px;
+    }
+}
+
+
 
