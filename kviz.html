@@ -6,6 +6,7 @@
     <meta name="keywords" content="csoportmunka, weboldal, HTML">
     <meta name="author" content="Papp Áron és Kiss Virág">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="kepek/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="stilus.css">
     <link rel="stylesheet" href="alap.css">
     <link rel="stylesheet" href="nav.css">
@@ -35,29 +36,63 @@
             <h3>Tedd próbára a tudásod!</h3>
 
             <p><b>1. Mi volt a felvilágosodás központi eszméje?</b></p>
-            <input type="radio" name="elso" value="a"> Az ész és a tudomány szerepe</label><br>
-            <input type="radio" name="elso" value="b"> Az egyház hatalmának növelése</label><br>
-            <input type="radio" name="elso" value="c"> A király abszolút hatalma</label>
 
+            <label for="elso-b">
+                <input type="radio" id="elso-b" name="elso" value="b" class="incorrect"> <span>Az egyház hatalmának növelése</span>
+            </label>
+            <label for="elso-c">
+                <input type="radio" id="elso-c" name="elso" value="c" class="incorrect"> <span>A feudális rendszer megerősítése</span>
+            </label>
+            <label for="elso-a">
+                <input type="radio" id="elso-a" name="elso" value="a" class="correct"> <span>Az ész és a tudomány szerepe</span>
+            </label>
 
+   
             <p><b>2. Ki írta a "Társadalmi szerződés" című művet?</b></p>
-            <input type="radio" name="masodik" value="a"> Jean-Jacques Rousseau</label><br>
-            <input type="radio" name="masodik" value="b"> Voltaire</label><br>
-            <input type="radio" name="masodik" value="c"> Montesquieu</label>
 
+            <label for="masodik-b">
+                <input type="radio" id="masodik-b" name="masodik" value="b" class="not(.correct)"> <span>Voltaire</span>
+            </label>
 
+            <label for="masodik-a">
+                <input type="radio" id="masodik-a" name="masodik" value="a" class="correct"> <span>Jean-Jacques Rousseau</span>
+            </label>
+
+            <label for="masodik-c">
+                <input type="radio" id="masodik-c" name="masodik" value="c" class="not(.correct)"> <span>Montesquieu</span>
+            </label>
+
+  
             <p><b>3. Mit hirdetett John Locke?</b></p>
-            <input type="radio" name="harmadik" value="a"> Természetes jogok (élet, szabadság, tulajdon)</label><br>
-            <input type="radio" name="harmadik" value="b"> Abszolút monarchia</label><br>
-            <input type="radio" name="harmadik" value="c"> Egyházi uralom</label>
+            <label for="harmadik-a">
+                <input type="radio" id="harmadik-a" name="harmadik" value="a" class="correct"> <span>Természetes jogok (élet, szabadság, tulajdon)</span>
+            </label>
+            <label for="harmadik-b">
+                <input type="radio" id="harmadik-b" name="harmadik" value="b" class="not(.correct)"> <span>Abszolút monarchia</span>
+            </label>
+            <label for="harmadik-c">
+                <input type="radio" id="harmadik-c" name="harmadik" value="c" class="not(.correct)"> <span>Egyházi uralom</span>
+            </label>
+
 
             
             <p><b>4. Mi volt az enciklopédia célja?</b></p>
-            <input type="radio" name="negyedik" value="a"> Az összes tudás összegyűjtése</label><br>
-            <input type="radio" name="negyedik" value="b"> Vallási tanok terjesztése</label><br>
-            <input type="radio" name="negyedik" value="c"> Katonai stratégiák gyűjtése</label>
 
-            <button type="button" onclick="checkAnswers()">Ellenőrzés</button>
+            <label for="negyedik-b">
+                <input type="radio" id="negyedik-b" name="negyedik" value="b" class="not(.correct)"> <span>Vallási tanok terjesztése</span>
+            </label>
+
+            <label for="negyedik-c">
+                <input type="radio" id="negyedik-c" name="negyedik" value="c" class="not(.correct)"> <span>Katonai stratégiák gyűjtése</span>
+            </label>
+
+            <label for="negyedik-a">
+                <input type="radio" id="negyedik-a" name="negyedik" value="a" class="correct"><span> Az összes tudás összegyűjtése</span>
+            </label>
+
+
+
+            <button type="button" onclick="checkAnswers()">Pontszám</button>
 
             <p id="result"></p>
         </form>
