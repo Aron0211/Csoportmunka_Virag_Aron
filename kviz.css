@@ -28,8 +28,8 @@ form {
 }
 
 form h1{
-    text-align: center;
-    text-decoration: underline;
+    text-align: left;
+    padding: 5px;
 }
 
 p{

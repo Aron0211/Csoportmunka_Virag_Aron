@@ -1,0 +1,23 @@
+article p{
+    background-color: rgba(235, 152, 252, 0.5);
+    border: 1px solid  rgba(235, 152, 252, 0.5);
+    border-radius: 5px;
+    color: black;
+}
+
+.text1{
+    padding-right: 150px;
+    text-align: left;
+}
+
+.text2{
+    padding-left: 150px;
+    text-align: right;
+}
+
+article{
+    background-image: url(kepek/chathatter.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
