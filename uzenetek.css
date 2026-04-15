@@ -4,6 +4,13 @@ article p{
     border-radius: 5px;
 }
 
+article{
+    background-image: url(kepek/chathatter.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .text1{
     padding-right: 120px;
     text-align: left;
