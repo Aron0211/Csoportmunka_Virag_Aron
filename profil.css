@@ -17,13 +17,6 @@ article{
     height: 100vh;
 }
 
-
-/* div{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-} */
-
 .profilname img{
     width: 100%;
     max-width: 150px;
@@ -60,7 +53,6 @@ article{
 .bejegyzesek img{
     border-radius: 0%;
     width: 100%;
-    /*height: 360px;*/
     aspect-ratio:0.8;
 }
 
