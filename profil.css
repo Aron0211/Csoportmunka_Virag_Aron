@@ -93,6 +93,9 @@ article{
     .bejegyzesek {
         gap: 10px;
         padding-inline: 10px;
+        grid-template-columns:1fr;
+        padding-top: 10px;
+        gap: 10px;
     }
 }
 
